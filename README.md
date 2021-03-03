@@ -20,29 +20,29 @@
 ## 安装
 
 ```Shell
-$ composer require yansongda/laravel-pay
+$ composer require ipanta/laravel-pay
 ```
 
 ### 添加 service provider（optional. if laravel < 5.5 || lumen）
 
 ```PHP
 // laravel < 5.5
-Yansongda\LaravelPay\PayServiceProvider::class,
+Ipanta\LaravelPay\PayServiceProvider::class,
 
 // lumen
-$app->register(Yansongda\LaravelPay\PayServiceProvider::class);
+$app->register(Ipanta\LaravelPay\PayServiceProvider::class);
 ```
 
 ### 添加 alias（optional. if laravel < 5.5）
 
 ```PHP
-'Pay' => Yansongda\LaravelPay\Facades\Pay::class,
+'Pay' => Ipanta\LaravelPay\Facades\Pay::class,
 ```
 
 ### 配置文件
 
 ```Shell
-$ php artisan vendor:publish --provider="Yansongda\LaravelPay\PayServiceProvider" --tag=laravel-pay
+$ php artisan vendor:publish --provider="Ipanta\LaravelPay\PayServiceProvider" --tag=laravel-pay
 ```
 
 **lumen 用户请手动复制**

@@ -1,10 +1,10 @@
 {
-    "name": "yansongda/laravel-pay",
+    "name": "ipanta/laravel-pay",
     "description": "专注 Alipay 和 WeChat 的 laravel 支付扩展包",
     "keywords": ["alipay", "wechat", "pay", "laravel", "package"],
     "support": {
-        "issues": "https://github.com/yansongda/laravel-pay/issues",
-        "source": "https://github.com/yansongda/laravel-pay"
+        "issues": "https://github.com/ipanta/laravel-pay/issues",
+        "source": "https://github.com/ipanta/laravel-pay"
     },
     "authors": [
         {
@@ -14,20 +14,20 @@
     ],
     "require": {
         "illuminate/support": "^5.1 || ^6.0 || ^7.0 || ^8.0",
-        "yansongda/pay": "^2.0"
+        "ipanta/pay": "^2.0"
     },
     "autoload": {
         "psr-4": {
-            "Yansongda\\LaravelPay\\": "src"
+            "Ipanta\\LaravelPay\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Yansongda\\LaravelPay\\PayServiceProvider"
+                "Ipanta\\LaravelPay\\PayServiceProvider"
             ],
             "aliases": {
-                "Pay": "Yansongda\\LaravelPay\\Facades\\Pay"
+                "Pay": "Ipanta\\LaravelPay\\Facades\\Pay"
             }
         }
     },
